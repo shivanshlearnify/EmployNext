@@ -5,6 +5,7 @@ import DetailedSearch from '../components/DetailedSearch'
 import JobSection from '../components/JobSection'
 import Subscribe from '../components/Subscribe'
 import Footer from '../components/Footer'
+import Reviwes from '../components/Reviwes'
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
         <AcheivementPercent/>
         <DetailedSearch/>
         <JobSection/>
+        <Reviwes/>
         <Subscribe/>
     </div>
   )

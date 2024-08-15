@@ -1,12 +1,14 @@
 import React from "react";
 import { FaFacebook } from "react-icons/fa";
 import { PiInstagramLogoFill } from "react-icons/pi";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <div className="flex justify-between mt-16 mb-16">
       <div className="max-w-[25%]">
-        <h1 className="flex flex-col items-start text-3xl font-bold text-pink-500 cursor-pointer mb-4">EmployNext</h1>
+        <h1 className="flex flex-col items-start text-3xl font-bold text-pink-500 cursor-pointer mb-4" onClick={()=>navigate("/")}>EmployNext</h1>
         <p className="flex flex-col items-start pb-2 text-gray-500 font-medium">
           EmployNext connect you with career opportunities tailored to you
           skills, relevance, and personal preferences

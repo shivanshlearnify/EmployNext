@@ -2697,3 +2697,26 @@ export const jobProfile = [
         profile:"Digital Marketer"
     },
 ]
+
+export const reviews = [
+  {
+    "name": "Nikhil",
+    "destination": "Tech Industry",
+    "detailedExperience": "Found a user-friendly interface that made it easy to filter job listings by role and location. The application process was straightforward, which significantly reduced the time spent applying for jobs."
+  },
+  {
+    "name": "Aditya",
+    "destination": "Finance Sector",
+    "detailedExperience": "Appreciated the personalized job recommendations based on previous searches and preferences. The platform's integration with LinkedIn helped in quickly updating profiles and applying to multiple jobs."
+  },
+  {
+    "name": "Prajwal",
+    "destination": "Healthcare",
+    "detailedExperience": "Valued the comprehensive company reviews and salary insights provided for each job listing. The ability to set up job alerts ensured they were notified immediately of new opportunities that matched their criteria."
+  },
+  {
+    "name": "Bhupesh",
+    "destination": "Creative Arts",
+    "detailedExperience": "Found the portfolio feature highly beneficial for showcasing work samples. The platform's networking features, such as connecting with industry professionals, helped in expanding their professional network and finding niche job opportunities."
+  }
+]
