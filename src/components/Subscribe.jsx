@@ -8,7 +8,7 @@ import { SiCanva } from "react-icons/si";
 const Subscribe = () => {
   return (
     <div
-      className="mt-8 h-[40vh] rounded-2xl flex flex-col items-start justify-center pl-10 relative"
+      className="mt-12 h-[40vh] rounded-2xl flex flex-col items-start justify-center pl-10 relative"
       style={{ background: `url(${subscibe})` }}
     >
       <h1 className="text-4xl font-bold">Transforming the Way</h1>

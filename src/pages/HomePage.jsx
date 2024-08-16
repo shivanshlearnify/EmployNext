@@ -6,6 +6,7 @@ import JobSection from '../components/JobSection'
 import Subscribe from '../components/Subscribe'
 import Footer from '../components/Footer'
 import Reviwes from '../components/Reviwes'
+import Premium from '../components/Premium'
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
         <DetailedSearch/>
         <JobSection/>
         <Reviwes/>
+        <Premium/>
         <Subscribe/>
     </div>
   )

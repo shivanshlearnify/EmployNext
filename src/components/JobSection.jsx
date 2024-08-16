@@ -8,7 +8,7 @@ const JobSection = () => {
   const navigate = useNavigate();
   return (
     <div className="flex flex-col items-center">
-      <JobCard jobData={jobData} itemToShow={6}/>
+      <JobCard jobData={jobData} itemToShow={12}/>
       <button className="border px-5 py-2 w-40 rounded-2xl text-xl font-medium mt-4 text-gray-500 hover:bg-pink-100" onClick={()=>navigate("/AllJobs")}>
         Show More
       </button>
