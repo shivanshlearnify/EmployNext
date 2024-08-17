@@ -22,26 +22,14 @@ const Footer = () => {
           <h1 className="flex flex-col items-start text-3xl font-semibold mb-4">Technology</h1>
           <ul className="flex flex-col items-start text-gray-500 gap-1 text-lg">
             <li className="cursor-pointer hover:text-gray-700" onClick={() => navigate("/Search")}>Search for Jobs</li>
-            <li className="cursor-pointer hover:text-gray-700">Browse Jobs</li>
-            <li className="cursor-pointer hover:text-gray-700">Browse Companies</li>
-            <li className="cursor-pointer hover:text-gray-700">Carrer Advice</li>
-          </ul>
-        </div>
-        <div className="Employers">
-          <h1 className="flex flex-col items-start text-3xl font-semibold mb-4">Employers</h1>
-          <ul className="flex flex-col items-start text-gray-500 gap-1 text-lg">
-            <li className="cursor-pointer hover:text-gray-700">Post Jobs</li>
-            <li className="cursor-pointer hover:text-gray-700">Source Talent</li>
-            <li className="cursor-pointer hover:text-gray-700">Employer & Advertising</li>
-            <li className="cursor-pointer hover:text-gray-700">Hiring Events</li>
+            <li className="cursor-pointer hover:text-gray-700" onClick={() => navigate("/Alljobs")}>Browse Jobs</li>
+            <li className="cursor-pointer hover:text-gray-700" onClick={() => navigate("/Alljobs")}>Browse Companies</li>
           </ul>
         </div>
         <div className="Company">
           <h1 className="flex flex-col items-start text-3xl font-semibold mb-4">Company</h1>
           <ul className="flex flex-col items-start text-gray-500 gap-1 text-lg">
-            <li className="cursor-pointer hover:text-gray-700">About Us</li>
-            <li className="cursor-pointer hover:text-gray-700">Media</li>
-            <li className="cursor-pointer hover:text-gray-700">Work at EmployNext</li>
+            <li className="cursor-pointer hover:text-gray-700"  onClick={() => navigate("/Contact")}>Work at EmployNext</li>
             <li className="cursor-pointer hover:text-gray-700" onClick={() => navigate("/Contact")}>Contact Us</li>
           </ul>
         </div>

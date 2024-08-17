@@ -15,16 +15,16 @@ const Header = () => {
         <span className="cursor-pointer" onClick={() => navigate("/Search")}>
           Find a Job
         </span>
-        <span className="cursor-pointer">Companies</span>
-        <span className="cursor-pointer">How Its work</span>
-        <span className="cursor-pointer">Blog</span>
+        <span className="cursor-pointer" onClick={() => navigate("/Alljobs")}>Companies</span>
+        <span className="cursor-pointer" onClick={()=>navigate("/ui")}>How Its work</span>
+        <span className="cursor-pointer" onClick={()=>navigate("/ui")}>Blog</span>
         <span className="cursor-pointer" onClick={() => navigate("/Contact")}>Contact</span>
       </div>
       <div className="flex gap-2">
-        <button className="border px-5 py-2 rounded-3xl cursor-pointer items-center ">
+        <button className="border px-5 py-2 rounded-3xl cursor-pointer items-center" onClick={()=>navigate("/ui")}>
           Login
         </button>
-        <button className="bg-black text-white px-4 py-2 rounded-3xl cursor-pointer">
+        <button className="bg-black text-white px-4 py-2 rounded-3xl cursor-pointer" onClick={()=>navigate("/ui")}>
           Sign Up
         </button>
       </div>

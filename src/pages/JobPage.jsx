@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { jobData } from "../data/constant";
 import JobCard from "../components/JobCard";
@@ -9,15 +9,26 @@ import b3 from "../assets/b3.jpg";
 import b4 from "../assets/b4.jpg";
 import b5 from "../assets/b5.jpg";
 import b6 from "../assets/b6.jpg";
+import ApplyPage from "../components/ApplyPage";
 
 const JobPage = () => {
+  const [active, setActive] = useState(false);
   const { id } = useParams();
   const jobPageData = jobData.filter((job) => job.jobId === id);
+
+  console.log(active);
+
+  const handleApply = ()=>{
+    setActive(true);
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0);
+  }
+  
 
   if (jobPageData.length === 0) {
     return <div>Job not found</div>;
   }
-  console.log(jobPageData);
 
   return (
     <div>
@@ -65,7 +76,7 @@ const JobPage = () => {
                   </div>
                 ))}
               </h1>
-              <button className="bg-black text-white px-4 py-2 text-2xl rounded-2xl cursor-pointer mt-4">
+              <button className="bg-black text-white px-4 py-2 text-2xl rounded-2xl cursor-pointer mt-4" onClick={handleApply} >
                 Apply Here
               </button>
             </div>
@@ -106,12 +117,20 @@ const JobPage = () => {
               </div>
 
               <div className="text-gray-500 text-sm">
-                <img src={b2} alt="Soft Skill Training" className="w-[50px] mb-2" />
+                <img
+                  src={b2}
+                  alt="Soft Skill Training"
+                  className="w-[50px] mb-2"
+                />
                 Soft Skill Training
               </div>
 
               <div className="text-gray-500 text-sm">
-                <img src={b3} alt="Education Assistance" className="w-[50px] mb-2" />
+                <img
+                  src={b3}
+                  alt="Education Assistance"
+                  className="w-[50px] mb-2"
+                />
                 Education Assistance
               </div>
 
@@ -136,6 +155,7 @@ const JobPage = () => {
       <h1 className="text-3xl font-bold mt-6">More Jobs To Apply</h1>
       <JobCard jobData={jobData} itemToShow={6} mt={"20px"} />
       <Subscribe />
+      <ApplyPage active={active} setActive={setActive}/>
     </div>
   );
 };

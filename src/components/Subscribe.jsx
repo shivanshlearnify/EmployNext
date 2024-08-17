@@ -1,11 +1,30 @@
-import React from "react";
+import React, { useRef } from "react";
 import subscibe from "../assets/subscibe.avif";
 import JobDesign from "./JobDesign";
 import { FaPinterest } from "react-icons/fa";
 import { SiCanva } from "react-icons/si";
+import toast from "react-hot-toast";
 
 
 const Subscribe = () => {
+  const emailRef = useRef();
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  const handleEmail = ()=>{
+    if (
+      emailRef.current.value === "" 
+    ) {
+      toast.error("All Feilds Are Required");
+    } else if (!emailRegex.test(emailRef.current.value)) {
+      toast.error("Enter a Valid Email");
+    } else {
+      toast.success(
+        `You have successfully Subscribed with ${emailRef.current.value}.`
+      );
+
+      emailRef.current.value = "";
+    }
+  }
   return (
     <div
       className="mt-12 h-[40vh] rounded-2xl flex flex-col items-start justify-center pl-10 relative"
@@ -20,12 +39,11 @@ const Subscribe = () => {
       <div className="flex gap-2">
         <input
           type="text"
-          name=""
-          id=""
+          ref={emailRef}
           placeholder="Enter your email"
           className="px-6 py-2 rounded-3xl w-80 outline-none"
         />
-        <button className="bg-black text-white px-6 py-2 rounded-3xl cursor-pointer">
+        <button className="bg-black text-white px-6 py-2 rounded-3xl cursor-pointer" onClick={handleEmail}>
           Subscribe
         </button>
       </div>

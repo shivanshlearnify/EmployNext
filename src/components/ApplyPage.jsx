@@ -1,15 +1,13 @@
-import React, { useRef } from "react";
-
+import React, { useEffect, useRef } from "react";
 import toast from "react-hot-toast";
-import Reviwes from "../components/Reviwes";
-import Premium from "../components/Premium";
-import Subscribe from "../components/Subscribe";
 
-const ContactPage = () => {
+const ApplyPage = ({active,setActive}) => {
   const fullNameRef = useRef(null);
   const emailRef = useRef(null);
   const concernRef = useRef(null);
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  
 
   const handleSubmit = () => {
     if (
@@ -22,7 +20,7 @@ const ContactPage = () => {
       toast.error("Enter a Valid Email");
     } else {
       toast.success(
-        "We have successfully received your concern, and we are eager to enhance it further."
+        "We have successfully received your Request, and we are eager to connect with you."
       );
 
       fullNameRef.current.value = "";
@@ -30,29 +28,11 @@ const ContactPage = () => {
       concernRef.current.value = "";
     }
   };
+
   return (
-    <div className="mt-28">
-      <div className="flex max-w-7xl justify-between m-auto p-3 my-10">
-        <div className="left w-1/3 flex flex-col gap-3 md:w-full sm:w-full">
-          <h2 className="text-4xl font-extrabold">
-            Need additional information?
-          </h2>
-          <p className="font-medium text-gray-500 ">
-            An accomplished professional adept in various domains of research,
-            development, and educational expertise, boasting over 15 years of
-            extensive experience.
-          </p>
-          <p className="text-gray-500">
-            <span className="font-bold">Phone:-</span>7845978412
-          </p>
-          <p className="text-gray-500">
-            <span className="font-bold">Email:-</span>EmployNext@gmail.com
-          </p>
-          <p className="text-gray-500">
-            <span className="font-bold">Location:-</span>Pune, In
-          </p>
-        </div>
-        <div className="right w-[600px] flex flex-col gap-3 md:mx-auto sm:w-full">
+    <div className="flex justify-center items-center z-50 absolute top-0 h-full w-[100vw] glassEffect2" style={{display: active ? "flex" : "none"}}>
+      <div className="p-10 border rounded-3xl shadow-2xl bg-pink-100 w-6/12">
+        <div className="right flex flex-col gap-3 ">
           <label className="text-2xl font-semibold" htmlFor="">
             Full Name
           </label>
@@ -72,7 +52,7 @@ const ContactPage = () => {
             placeholder="Enter here"
           />
           <label className="text-2xl font-semibold" htmlFor="">
-            Share your concern
+            Tell us About Yourself
           </label>
           <textarea
             ref={concernRef}
@@ -85,14 +65,13 @@ const ContactPage = () => {
             onClick={handleSubmit}
             className="w-full cursor-pointer px-4 py-2 bg-pink-500 rounded-md text-white"
           >
-            Send Message
+            Apply
           </button>
         </div>
       </div>
-      <Premium />
-      <Subscribe />
+      <button className="text-6xl font-bold relative top-[-200px] right-[-50px]" onClick={()=>setActive(false)}>x</button>
     </div>
   );
 };
 
-export default ContactPage;
+export default ApplyPage;
