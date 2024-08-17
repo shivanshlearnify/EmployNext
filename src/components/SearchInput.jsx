@@ -23,20 +23,20 @@ const SearchInput = ({ border }) => {
 
   return (
     <div className="relative">
-      <div className=" flex gap-3">
+      <div className=" flex gap-3 sm:flex-col sm:px-1">
         <input
           type="text"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           placeholder="Search for job...."
-          className="px-6 py-2 rounded-3xl w-80 outline-none"
+          className="px-6 py-2 rounded-3xl w-80 outline-none sm:w-auto"
           style={{ borderWidth: border ? "1px" : 0 }}
         />
-        <button className="bg-black text-white px-6 py-2 rounded-3xl cursor-pointer">
+        <button className="bg-black text-white px-6 py-2 rounded-3xl cursor-pointer sm:w-auto">
           Search
         </button>
       </div>
-      <div className="absolute bg-white rounded-lg p-2 shadow-2xl" style={{display: filterData.length ? "" : "none"}}>
+      <div className="absolute bg-white rounded-lg p-2 shadow-2xl sm:top-12" style={{display: filterData.length ? "" : "none"}}>
         {filterData?.slice(0, 5).map((data) => (
           <div key={data.jobId} className="flex flex-col">
             <div className="" onClick={()=>navigate(`/Job/${data.jobId}`)}>

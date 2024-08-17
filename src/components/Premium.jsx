@@ -2,20 +2,20 @@ import circleCard from "../assets/circleCard.png";
 
 const Premium = () => {
   return (
-    <div className="border py-4 px-8 rounded-2xl shadow-md flex gap-48 items-center relative">
-      <div className="flex items-center gap-10">
-        <div className="circle">
+    <div className="border py-4 px-8 rounded-2xl shadow-md flex gap-48 items-center relative sm:flex-col sm:gap-4">
+      <div className="flex items-center gap-10 sm:flex-col">
+        <div className="circle sm:pt-4 md:hidden">
           <img className="w-56" src={circleCard} alt="circleCard" />
         </div>
         <div>
-          <h1 className="text-2xl font-semibold">
+          <h1 className="text-2xl font-semibold sm:text-center">
             Accelerate your job search with premium services
           </h1>
-          <h1 className="text-gray-500 font-medium">
+          <h1 className="text-gray-500 font-medium sm:text-center">
             Services to help you get hired, faster: from preparing your CV,
             getting recruiter attention, finding the right jobs, and more!
           </h1>
-          <div className="flex gap-2 mt-2">
+          <div className="flex gap-2 mt-2 sm:flex-wrap sm:justify-center">
             <button className="flex gap-2 border rounded-3xl px-3 py-1 text-pink-500 text-sm font-medium">
               Resume Writing <span>&gt;</span>
             </button>

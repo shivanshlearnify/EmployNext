@@ -27,16 +27,16 @@ const Subscribe = () => {
   }
   return (
     <div
-      className="mt-12 h-[40vh] rounded-2xl flex flex-col items-start justify-center pl-10 relative"
+      className="mt-12 h-[40vh] rounded-2xl flex flex-col items-start justify-center pl-10 relative sm:px-2 sm:items-center sm:h-auto sm:py-6"
       style={{ background: `url(${subscibe})` }}
     >
-      <h1 className="text-4xl font-bold">Transforming the Way</h1>
+      <h1 className="text-4xl font-bold sm:text-center">Transforming the Way</h1>
       <h1 className="text-4xl font-bold">You Find Jobs</h1>
-      <p className="mt-2 ">
+      <p className="mt-2 sm:text-center">
         Stop searching, start discovering. Let the ideal job
       </p>
       <p className="mb-3">come to you.</p>
-      <div className="flex gap-2">
+      <div className="flex gap-2 sm:flex-col">
         <input
           type="text"
           ref={emailRef}

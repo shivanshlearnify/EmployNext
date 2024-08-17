@@ -11,12 +11,12 @@ import { FaSquareInstagram } from "react-icons/fa6";
 const HeroSection = () => {
   return (
     <div
-      className="h-[80vh] mt-24 rounded-3xl flex flex-col justify-center align-middle relative"
+      className="h-[80vh] mt-24 rounded-3xl flex flex-col justify-center text-center items-center relative md:mt-48 sm:mt-52 md:h-[60vh] sm:h-[50vh]"
       style={{ backgroundImage: `url(${Heroimg})` }}
     >
-      <h1 className="text-6xl max-w-[34rem] mx-auto">Modernizing the Job Search Experience</h1>
-      <p className="mt-3 font-semibold text-gray-700 max-w-2xl mx-auto">Search and find your dream job now easier than ever, you can</p>
-      <p className="mb-3 font-semibold text-gray-700 max-w-2xl mx-auto">simply browse and find a job if you need it</p>
+      <h1 className="text-6xl max-w-[34rem] mx-auto sm:text-3xl sm:font-extrabold sm:text-center sm:px-2">Modernizing the Job Search Experience</h1>
+      <p className="mt-3 font-semibold text-gray-700 max-w-2xl mx-auto sm:text-center sm:px-2">Search and find your dream job now easier than ever, you can</p>
+      <p className="mb-3 font-semibold text-gray-700 max-w-2xl mx-auto sm:text-center sm:px-2">simply browse and find a job if you need it</p>
       <div className="max-w-2xl mx-auto">
         <SearchInput/>
       </div>

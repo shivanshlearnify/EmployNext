@@ -31,9 +31,9 @@ const ApplyPage = ({active,setActive}) => {
 
   return (
     <div className="flex justify-center items-center z-50 absolute top-0 h-full w-[100vw] glassEffect2" style={{display: active ? "flex" : "none"}}>
-      <div className="p-10 border rounded-3xl shadow-2xl bg-pink-100 w-6/12">
+      <div className="p-10 border rounded-3xl shadow-2xl bg-pink-100 w-6/12 sm:w-[80vw]">
         <div className="right flex flex-col gap-3 ">
-          <label className="text-2xl font-semibold" htmlFor="">
+          <label className="text-2xl font-semibold sm:text-base sm:w-full" htmlFor="">
             Full Name
           </label>
           <input
@@ -69,7 +69,7 @@ const ApplyPage = ({active,setActive}) => {
           </button>
         </div>
       </div>
-      <button className="text-6xl font-bold relative top-[-200px] right-[-50px]" onClick={()=>setActive(false)}>x</button>
+      <button className="text-6xl font-bold relative top-[-200px] right-[-50px] sm:text-4xl sm:top-[-315px] sm:right-[-5px]" onClick={()=>setActive(false)}>x</button>
     </div>
   );
 };

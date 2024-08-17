@@ -31,8 +31,8 @@ const AllJobs = () => {
     };
   }, []);
   return (
-    <div className="flex gap-3">
-      <div className="companies mt-28">
+    <div className="flex gap-3 md:mt-32 sm:mt-32 ">
+      <div className="companies mt-28 sm:hidden">
         <h1 className="text-xl text-gray-800">Companies Hiring</h1>
         <div className="border px-2 py-4 rounded-2xl">
           {jobData
@@ -56,7 +56,7 @@ const AllJobs = () => {
       <div>
         <JobCard jobData={jobData} itemToShow={itemToShow} />
         {loading && (
-          <p className="w-[360px] mx-auto my-10 text-4xl">
+          <p className="w-[360px] mx-auto my-10 text-4xl sm:text-2xl">
             Loading more items...
           </p>
         )}

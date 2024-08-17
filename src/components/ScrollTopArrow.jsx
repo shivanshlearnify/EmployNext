@@ -7,7 +7,7 @@ const ScrollTopArrow = () => {
   };
   return (
     <div
-      className="fixed right-[16px] bottom-[40px] text-4xl cursor-pointer text-[#f58383]"
+      className="fixed right-[16px] bottom-[40px] text-4xl cursor-pointer text-black z-50"
       onClick={handleScrollToTop}
     >
       <FaCircleArrowUp />

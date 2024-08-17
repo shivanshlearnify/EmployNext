@@ -5,7 +5,7 @@ import { LuMapPin } from "react-icons/lu";
 
 const JobDesign = ({ icon, jobTitle, company, type, location ,salary, top,right,color}) => {
   return (
-    <div className="border p-4 rounded-3xl mt-2 max-w-[300px]  bg-white absolute" style={{top:top,right:right}}>
+    <div className="border p-4 rounded-3xl mt-2 max-w-[300px]  bg-white absolute sm:hidden md:hidden" style={{top:top,right:right}}>
       <div className="flex justify-between items-center">
         <div className="border p-2 rounded-full text-2xl" style={{color:color}}>{icon}</div>
         <div className="mx-3">

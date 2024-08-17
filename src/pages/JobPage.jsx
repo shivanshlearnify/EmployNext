@@ -31,8 +31,8 @@ const JobPage = () => {
   }
 
   return (
-    <div>
-      <div className="flex justify-between">
+    <div className="sm:mt-32 md:mt-32">
+      <div className="flex justify-between gap-2 sm:flex-col">
         <div>
           <div className="mt-28 border py-10 px-4 rounded-2xl shadow-lg max-w-4xl capitalize mb-8">
             <div className="">
@@ -105,7 +105,7 @@ const JobPage = () => {
           </div>
         </div>
         <div>
-          <div className="border p-4 mt-28 rounded-2xl w-[330px]">
+          <div className="border p-4 mt-28 rounded-2xl w-[330px] sm:mt-4 sm:w-[90vw]">
             <h1 className="text-xl font-bold">Benefits & Perks</h1>
             <h1 className="text-gray-500 text-sm">
               1 Users reported these benefits

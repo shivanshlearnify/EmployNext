@@ -9,13 +9,13 @@ const DetailedSearch = () => {
         <p className="text-pink-500 font-semibold">
           Realize Your Career Dreams
         </p>
-        <h1 className="text-6xl font-medium mt-4">Search and Discover</h1>
-        <h1 className="text-6xl font-medium mb-4"> Your Jobs Here</h1>
+        <h1 className="text-6xl font-medium mt-4 sm:text-3xl sm:text-center">Search and Discover</h1>
+        <h1 className="text-6xl font-medium mb-4 sm:text-3xl sm:text-center"> Your Jobs Here</h1>
       </div>
       <div className="my-4">
         <SearchInput border={true} />
       </div>
-      <div className="grid grid-cols-4 gap-4 mt-6">
+      <div className="grid grid-cols-4 gap-4 mt-6 sm:flex sm:flex-wrap sm:justify-center">
         {jobProfile.map((job) => {
           return (
             <div key={job.id}>

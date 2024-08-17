@@ -6,8 +6,8 @@ import { useNavigate } from "react-router-dom";
 const Footer = () => {
   const navigate = useNavigate();
   return (
-    <div className="flex justify-between mt-16 mb-16">
-      <div className="max-w-[25%]">
+    <div className="flex justify-between my-10">
+      <div className="max-w-[25%] sm:max-w-full">
         <h1 className="flex flex-col items-start text-3xl font-bold text-pink-500 cursor-pointer mb-4" onClick={()=>navigate("/")}>EmployNext</h1>
         <p className="flex flex-col items-start pb-2 text-gray-500 font-medium">
           EmployNext connect you with career opportunities tailored to you
@@ -17,7 +17,7 @@ const Footer = () => {
           <FaFacebook className="hover:text-pink-500 cursor-pointer" /> <PiInstagramLogoFill className="hover:text-pink-500 cursor-pointer"  />
         </div>
       </div>
-      <div className="grid grid-cols-3 max-w-[70%] min-w-[60%]">
+      <div className="grid grid-cols-3 max-w-[70%] min-w-[60%] sm:hidden">
         <div className="technology ">
           <h1 className="flex flex-col items-start text-3xl font-semibold mb-4">Technology</h1>
           <ul className="flex flex-col items-start text-gray-500 gap-1 text-lg">

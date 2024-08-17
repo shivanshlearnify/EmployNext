@@ -6,7 +6,7 @@ import Subscribe from '../components/Subscribe'
 
 const SearchForJob = () => {
   return (
-    <div>
+    <div className="mt-52">
         <DetailedSearch/>
         <Reviwes/>
         <Premium/>

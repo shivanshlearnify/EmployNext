@@ -6,7 +6,7 @@ const UiUnderConstruction = () => {
     return (
         <div className="flex items-center justify-center h-[80vh]">
           <div className="text-center">
-            <h1 className="text-6xl font-bold text-pink-500 mb-4">
+            <h1 className="text-6xl font-bold text-pink-500 mb-4 sm:text-4xl">
               Page Under Construction
             </h1>
             <p className="text-xl text-gray-300">

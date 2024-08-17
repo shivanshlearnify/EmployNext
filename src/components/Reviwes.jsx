@@ -5,8 +5,8 @@ const Reviwes = () => {
   return (
     <div className="flex flex-col items-center mt-10 mb-14 ">
       <h1 className="text-pink-500 font-bold">Sucess Experience</h1>
-      <h1 className="text-6xl font-bold my-2">Insights from Connect Users</h1>
-      <div className="flex gap-4 my-4">
+      <h1 className="text-6xl font-bold my-2 sm:text-3xl sm:text-center md:text-center ">Insights from Connect Users</h1>
+      <div className="flex gap-4 my-4 sm:flex-col md:flex-col">
         {reviews.map((data, index) => (
           <div
             key={index}

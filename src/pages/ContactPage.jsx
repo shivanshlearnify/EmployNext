@@ -31,13 +31,13 @@ const ContactPage = () => {
     }
   };
   return (
-    <div className="mt-28">
-      <div className="flex max-w-7xl justify-between m-auto p-3 my-10">
+    <div className="mt-28 md:mt-44 sm:mt-48">
+      <div className="flex max-w-7xl justify-between m-auto p-3 my-10 sm:flex-col sm:gap-4">
         <div className="left w-1/3 flex flex-col gap-3 md:w-full sm:w-full">
-          <h2 className="text-4xl font-extrabold">
+          <h2 className="text-4xl font-extrabold sm:text-center">
             Need additional information?
           </h2>
-          <p className="font-medium text-gray-500 ">
+          <p className="font-medium text-gray-500 sm:text-center">
             An accomplished professional adept in various domains of research,
             development, and educational expertise, boasting over 15 years of
             extensive experience.

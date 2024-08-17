@@ -6,7 +6,7 @@ const JobCard = ({jobData, itemToShow, mt="133px"}) => {
   const navigate = useNavigate();
   return (
     <div>
-      <div className="grid grid-cols-2 gap-x-16 gap-y-6 capitalize" style={{marginTop: mt}}>
+      <div className="grid grid-cols-2 gap-x-16 gap-y-6 capitalize sm:flex sm:flex-col sm:w-[90vw] sm:mx-4" style={{marginTop: mt}}>
         {jobData.slice(0, itemToShow).map((job) => {
           return (
             <div
