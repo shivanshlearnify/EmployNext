@@ -18,10 +18,10 @@ const Header = () => {
         <span className="cursor-pointer" onClick={() => navigate("/Alljobs")}>
           Companies
         </span>
-        <span className="cursor-pointer" onClick={() => navigate("/ui")}>
+        <span className="cursor-pointer" onClick={() => navigate("/HowItsWorks")}>
           How Its work
         </span>
-        <span className="cursor-pointer" onClick={() => navigate("/ui")}>
+        <span className="cursor-pointer" onClick={() => navigate("/Blog")}>
           Blog
         </span>
         <span className="cursor-pointer" onClick={() => navigate("/Contact")}>

@@ -10,6 +10,8 @@ import SearchForJob from "./pages/SearchForJob.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 import Error from "./components/Error.jsx";
 import UiUnderConstruction from "./pages/UiUnderConstruction.jsx";
+import HowItWork from "./pages/HowItWork.jsx";
+import Blog from "./components/Blog.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,8 @@ const router = createBrowserRouter([
       { path: "/Search", element: <SearchForJob /> },
       { path: "/Contact", element: <ContactPage /> },
       { path: "/ui", element: <UiUnderConstruction /> },
+      { path: "/HowItsWorks", element: <HowItWork /> },
+      { path: "/Blog", element: <Blog /> },
     ],
   },
 ]);
